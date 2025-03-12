@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "raindrop/*": ["dist/src/*"],
-      "raindrop": ["dist/src/index.ts"],
+      "lm-raindrop/*": ["dist/src/*"],
+      "lm-raindrop": ["dist/src/index.ts"],
     },
     "noEmit": false,
     "declaration": true,
