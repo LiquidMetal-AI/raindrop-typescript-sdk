@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { Raindrop } from 'lm-raindrop';
+import { Raindrop } from '@liquidmetal-ai/lm-raindrop';
 
 const { stringifyQuery } = Raindrop.prototype as any;
 
