@@ -1,6 +1,6 @@
 {
   "name": "lm-raindrop",
-  "version": "0.1.0-alpha.2",
+  "version": "0.1.0-alpha.3",
   "description": "The official TypeScript library for the Raindrop API",
   "author": "Raindrop <dev-feedback@raindrop.com>",
   "types": "dist/index.d.ts",
@@ -50,8 +50,8 @@
     "synckit": "0.8.8"
   },
   "imports": {
-    "raindrop": ".",
-    "raindrop/*": "./src/*"
+    "lm-raindrop": ".",
+    "lm-raindrop/*": "./src/*"
   },
   "exports": {
     ".": {
