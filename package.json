@@ -1,5 +1,5 @@
 {
-  "name": "raindrop",
+  "name": "lm-raindrop",
   "version": "0.1.0-alpha.1",
   "description": "The official TypeScript library for the Raindrop API",
   "author": "Raindrop <dev-feedback@raindrop.com>",
