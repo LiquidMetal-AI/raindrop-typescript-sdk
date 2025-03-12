@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "lm-raindrop/*": ["dist/src/*"],
-      "lm-raindrop": ["dist/src/index.ts"],
+      "@liquidmetal-ai/lm-raindrop/*": ["dist/src/*"],
+      "@liquidmetal-ai/lm-raindrop": ["dist/src/index.ts"],
     },
     "noEmit": false,
     "declaration": true,

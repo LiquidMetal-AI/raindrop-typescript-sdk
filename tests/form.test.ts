@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'lm-raindrop/internal/uploads';
-import { toFile } from 'lm-raindrop/uploads';
+import { multipartFormRequestOptions, createForm } from '@liquidmetal-ai/lm-raindrop/internal/uploads';
+import { toFile } from '@liquidmetal-ai/lm-raindrop/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
