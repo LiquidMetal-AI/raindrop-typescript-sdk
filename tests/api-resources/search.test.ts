@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Raindrop from 'raindrop';
+import Raindrop from 'lm-raindrop';
 
 const client = new Raindrop({
   apiKey: 'My API Key',
