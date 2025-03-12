@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^lm-raindrop$': '<rootDir>/src/index.ts',
-    '^lm-raindrop/(.*)$': '<rootDir>/src/$1',
+    '^@liquidmetal-ai/lm-raindrop$': '<rootDir>/src/index.ts',
+    '^@liquidmetal-ai/lm-raindrop/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',
