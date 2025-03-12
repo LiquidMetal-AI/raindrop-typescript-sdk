@@ -50,8 +50,8 @@
     "synckit": "0.8.8"
   },
   "imports": {
-    "lm-raindrop": ".",
-    "lm-raindrop/*": "./src/*"
+    "raindrop": ".",
+    "raindrop/*": "./src/*"
   },
   "exports": {
     ".": {
