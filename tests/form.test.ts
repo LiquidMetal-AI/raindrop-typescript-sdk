@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'lm-raindrop/internal/uploads';
-import { toFile } from 'lm-raindrop/uploads';
+import { multipartFormRequestOptions, createForm } from 'raindrop/internal/uploads';
+import { toFile } from 'raindrop/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
