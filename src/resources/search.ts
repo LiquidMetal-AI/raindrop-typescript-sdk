@@ -8,7 +8,8 @@ export class Search extends APIResource {
   /**
    * Retrieve additional pages from a previous search. This endpoint enables
    * navigation through large result sets while maintaining search context and result
-   * relevance.
+   * relevance. Retrieving paginated results requires a valid `request_id` from a
+   * previously completed search.
    */
   getResults(query: SearchGetResultsParams, options?: RequestOptions): APIPromise<SearchResponse> {
     return this._client.get('/v1/search', { query, ...options });
@@ -17,8 +18,8 @@ export class Search extends APIResource {
   /**
    * Primary search endpoint that provides advanced search capabilities across all
    * document types stored in Smart Buckets. Supports recursive object search within
-   * documents, enabling queries for nested content like embedded images, text
-   * content, and personally identifiable information (PII).
+   * objects, enabling nested content search like embedded images, text content, and
+   * personally identifiable information (PII).
    *
    * The system supports complex queries like:
    *
@@ -26,7 +27,7 @@ export class Search extends APIResource {
    * - 'Find images of landscapes taken during sunset'
    * - 'Get documents mentioning revenue forecasts from Q4 2023'
    * - 'Find me all PDF documents that contain pictures of a cat'
-   * - 'find me all audio files that contain infomration about the weather in SF in
+   * - 'Find me all audio files that contain infomration about the weather in SF in
    *   2024'
    *
    * Key capabilities:

@@ -7,9 +7,12 @@ import { RequestOptions } from '../internal/request-options';
 export class DocumentQuery extends APIResource {
   /**
    * Enables natural conversational interactions with documents stored in Smart
-   * Buckets.
+   * Buckets. This endpoint allows users to ask questions, request summaries, and
+   * explore document content through an intuitive conversational interface. The
+   * system understands context and can handle complex queries about document
+   * contents.
    *
-   * The query system maintains conversation context throught the request_id,
+   * The query system maintains conversation context throught the `request_id`,
    * enabling follow-up questions and deep exploration of document content. It works
    * across all supported file types and automatically handles multi-page documents,
    * making complex file interaction as simple as having a conversation.

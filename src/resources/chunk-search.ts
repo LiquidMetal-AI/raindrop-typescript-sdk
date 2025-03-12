@@ -7,9 +7,9 @@ import { RequestOptions } from '../internal/request-options';
 
 export class ChunkSearch extends APIResource {
   /**
-   * Chunk Search provides an advanced search capability that serves as a complete
-   * drop-in replacement for traditional RAG pipelines. This system enables AI agents
-   * to leverage private data stored in Smart Buckets with zero additional
+   * Chunk Search provides a search capabilities that serve as a complete drop-in
+   * replacement for traditional RAG pipelines. This system enables AI agents to
+   * leverage private data stored in Smart Buckets with zero additional
    * configuration.
    *
    * Each input query is processed by our AI agent to determine the best way to
