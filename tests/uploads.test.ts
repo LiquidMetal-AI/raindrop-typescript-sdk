@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'raindrop/internal/to-file';
-import { toFile } from 'raindrop/uploads';
+import type { ResponseLike } from 'lm-raindrop/internal/to-file';
+import { toFile } from 'lm-raindrop/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('raindrop/uploads');
+    const uploads = await import('lm-raindrop/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(
