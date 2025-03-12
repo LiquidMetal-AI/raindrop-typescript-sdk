@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'lm-raindrop/api-promise';
+import { APIPromise } from '@liquidmetal-ai/lm-raindrop/api-promise';
 
 import util from 'node:util';
-import Raindrop from 'lm-raindrop';
-import { APIUserAbortError } from 'lm-raindrop';
+import Raindrop from '@liquidmetal-ai/lm-raindrop';
+import { APIUserAbortError } from '@liquidmetal-ai/lm-raindrop';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {
