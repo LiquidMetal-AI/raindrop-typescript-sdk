@@ -25,6 +25,14 @@ import {
   DocumentQueryCreateResponse,
 } from './resources/document-query';
 import {
+  Object,
+  ObjectDeleteParams,
+  ObjectDeleteResponse,
+  ObjectDownloadParams,
+  ObjectUploadParams,
+  ObjectUploadResponse,
+} from './resources/object';
+import {
   Search,
   SearchGetResultsParams,
   SearchPerformParams,
@@ -737,11 +745,13 @@ export class Raindrop {
   documentQuery: API.DocumentQuery = new API.DocumentQuery(this);
   chunkSearch: API.ChunkSearch = new API.ChunkSearch(this);
   summarizePage: API.SummarizePage = new API.SummarizePage(this);
+  object: API.Object = new API.Object(this);
 }
 Raindrop.Search = Search;
 Raindrop.DocumentQuery = DocumentQuery;
 Raindrop.ChunkSearch = ChunkSearch;
 Raindrop.SummarizePage = SummarizePage;
+Raindrop.Object = Object;
 export declare namespace Raindrop {
   export type RequestOptions = Opts.RequestOptions;
 
@@ -769,5 +779,14 @@ export declare namespace Raindrop {
     SummarizePage as SummarizePage,
     type SummarizePageCreateResponse as SummarizePageCreateResponse,
     type SummarizePageCreateParams as SummarizePageCreateParams,
+  };
+
+  export {
+    Object as Object,
+    type ObjectDeleteResponse as ObjectDeleteResponse,
+    type ObjectUploadResponse as ObjectUploadResponse,
+    type ObjectDeleteParams as ObjectDeleteParams,
+    type ObjectDownloadParams as ObjectDownloadParams,
+    type ObjectUploadParams as ObjectUploadParams,
   };
 }

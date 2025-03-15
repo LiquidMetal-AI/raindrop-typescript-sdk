@@ -7,6 +7,14 @@ export {
   type DocumentQueryCreateParams,
 } from './document-query';
 export {
+  Object,
+  type ObjectDeleteResponse,
+  type ObjectUploadResponse,
+  type ObjectDeleteParams,
+  type ObjectDownloadParams,
+  type ObjectUploadParams,
+} from './object';
+export {
   Search,
   type SearchResponse,
   type TextResult,

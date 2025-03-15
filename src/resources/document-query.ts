@@ -19,7 +19,7 @@ export class DocumentQuery extends APIResource {
    *
    * The system will:
    *
-   * - Maintain conversation history for context when using the same request_id
+   * - Maintain conversation history for context when using the same `request_id`
    * - Process questions against file content
    * - Generate contextual, relevant responses
    *
