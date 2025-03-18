@@ -29,6 +29,7 @@ import {
   ObjectDeleteParams,
   ObjectDeleteResponse,
   ObjectDownloadParams,
+  ObjectListResponse,
   ObjectUploadParams,
   ObjectUploadResponse,
 } from './resources/object';
@@ -783,6 +784,7 @@ export declare namespace Raindrop {
 
   export {
     Object as Object,
+    type ObjectListResponse as ObjectListResponse,
     type ObjectDeleteResponse as ObjectDeleteResponse,
     type ObjectUploadResponse as ObjectUploadResponse,
     type ObjectDeleteParams as ObjectDeleteParams,
