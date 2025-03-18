@@ -8,6 +8,7 @@ export {
 } from './document-query';
 export {
   Object,
+  type ObjectListResponse,
   type ObjectDeleteResponse,
   type ObjectUploadResponse,
   type ObjectDeleteParams,
