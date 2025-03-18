@@ -9,8 +9,9 @@ import { path } from '../internal/utils/path';
 
 export class Object extends APIResource {
   /**
-   * Delete a file from the storage system. The bucket parameter is used for access
-   * control, while the key determines which object to delete.
+   * Delete a file from a Smart Bucket or regular bucket. The bucket parameter (ID)
+   * is used to identify the bucket to delete from. The key is the path to the object
+   * in the bucket.
    */
   delete(
     key: string,
@@ -22,9 +23,9 @@ export class Object extends APIResource {
   }
 
   /**
-   * Download a file from the storage system. The bucket parameter is used for access
-   * control, while the key determines which object to retrieve. Supports streaming
-   * downloads.
+   * Download a file from a Smart Bucket or regular bucket. The bucket parameter (ID)
+   * is used to identify the bucket to download from. The key is the path to the
+   * object in the bucket.
    */
   download(key: string, params: ObjectDownloadParams, options?: RequestOptions): APIPromise<Response> {
     const { bucket } = params;
@@ -36,9 +37,9 @@ export class Object extends APIResource {
   }
 
   /**
-   * Upload a file to the storage system. The bucket parameter is used for access
-   * control, while the key determines the storage path. Supports streaming uploads
-   * for files of any size.
+   * Upload a file to a Smart Bucket or regular bucket. The bucket parameter (ID) is
+   * used to identify the bucket to upload to. The key is the path to the object in
+   * the bucket.
    */
   upload(
     key: string,
@@ -68,21 +69,21 @@ export interface ObjectUploadResponse {
 
 export interface ObjectDeleteParams {
   /**
-   * The bucket identifier to validate access
+   * The bucket identifier
    */
   bucket: string;
 }
 
 export interface ObjectDownloadParams {
   /**
-   * The bucket identifier to validate access
+   * The bucket identifier
    */
   bucket: string;
 }
 
 export interface ObjectUploadParams {
   /**
-   * Path param: The bucket identifier to validate access
+   * Path param: The bucket identifier
    */
   bucket: string;
 
