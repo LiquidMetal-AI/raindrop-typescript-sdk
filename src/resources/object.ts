@@ -9,6 +9,14 @@ import { path } from '../internal/utils/path';
 
 export class Object extends APIResource {
   /**
+   * List all objects in a Smart Bucket or regular bucket. The bucket parameter (ID)
+   * is used to identify the bucket to list objects from.
+   */
+  list(bucket: string, options?: RequestOptions): APIPromise<ObjectListResponse> {
+    return this._client.get(path`/v1/object/${bucket}`, options);
+  }
+
+  /**
    * Delete a file from a Smart Bucket or regular bucket. The bucket parameter (ID)
    * is used to identify the bucket to delete from. The key is the path to the object
    * in the bucket.
@@ -55,6 +63,34 @@ export class Object extends APIResource {
   }
 }
 
+export interface ObjectListResponse {
+  objects?: Array<ObjectListResponse.Object>;
+}
+
+export namespace ObjectListResponse {
+  export interface Object {
+    /**
+     * MIME type of the object
+     */
+    content_type?: string;
+
+    /**
+     * Object key/path in the bucket
+     */
+    key?: string;
+
+    /**
+     * Last modification timestamp
+     */
+    last_modified?: string;
+
+    /**
+     * Size of the object in bytes (as string due to potential BigInt values)
+     */
+    size?: string;
+  }
+}
+
 export interface ObjectDeleteResponse {
   success: boolean;
 }
@@ -95,6 +131,7 @@ export interface ObjectUploadParams {
 
 export declare namespace Object {
   export {
+    type ObjectListResponse as ObjectListResponse,
     type ObjectDeleteResponse as ObjectDeleteResponse,
     type ObjectUploadResponse as ObjectUploadResponse,
     type ObjectDeleteParams as ObjectDeleteParams,
