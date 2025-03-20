@@ -57,6 +57,38 @@ main();
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
 
+## File uploads
+
+Request parameters that correspond to file uploads can be passed in many different forms:
+
+- `File` (or an object with the same structure)
+- a `fetch` `Response` (or an object with the same structure)
+- an `fs.ReadStream`
+- the return value of our `toFile` helper
+
+```ts
+import fs from 'fs';
+import Raindrop, { toFile } from '@liquidmetal-ai/lm-raindrop';
+
+const client = new Raindrop();
+
+// If you have access to Node `fs` we recommend using `fs.createReadStream()`:
+await client.object.upload('key', { bucket: 'bucket', body: fs.createReadStream('/path/to/file') });
+
+// Or if you have the web `File` API you can pass a `File` instance:
+await client.object.upload('key', { bucket: 'bucket', body: new File(['my bytes'], 'file') });
+
+// You can also pass a `fetch` `Response`:
+await client.object.upload('key', { bucket: 'bucket', body: await fetch('https://somesite/file') });
+
+// Finally, if none of the above are convenient, you can use our `toFile` helper:
+await client.object.upload('key', { bucket: 'bucket', body: await toFile(Buffer.from('my bytes'), 'file') });
+await client.object.upload('key', {
+  bucket: 'bucket',
+  body: await toFile(new Uint8Array([0, 1, 2]), 'file'),
+});
+```
+
 ## Handling errors
 
 When the library is unable to connect to the API,
