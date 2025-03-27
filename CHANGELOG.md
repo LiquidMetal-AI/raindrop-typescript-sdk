@@ -1,5 +1,30 @@
 # Changelog
 
+## 0.1.0-alpha.5 (2025-03-27)
+
+Full Changelog: [v0.1.0-alpha.4...v0.1.0-alpha.5](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/compare/v0.1.0-alpha.4...v0.1.0-alpha.5)
+
+### Features
+
+* **api:** updating API spec with latest changes ([#13](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/13)) ([ce63eee](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/ce63eee8052725159e881c5bd36a6fac7aa3ac67))
+* **api:** updating API spec with latest changes ([#15](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/15)) ([9fd8cfd](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/9fd8cfd97ca9db973ff7e13ac656aadf2aaf6215))
+* **api:** updating API spec with latest changes ([#18](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/18)) ([8dee844](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/8dee84402f986cc16cb24ef3d3ce0cbad69dc192))
+* **api:** updating API spec with latest changes ([#19](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/19)) ([47477f2](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/47477f2fbbcfabd07248b0e38399f2a620161fe1))
+
+
+### Bug Fixes
+
+* **internal:** add mts file + crypto shim types ([#17](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/17)) ([cd6653a](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/cd6653afa3f1583e1d525774781e725ce1cd9e41))
+
+
+### Chores
+
+* **client:** move misc public files to new `core/` directory, deprecate old paths ([#23](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/23)) ([a59a1a6](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/a59a1a6e9f68f80cca971279c3af6d5e212784ed))
+* **exports:** cleaner resource index imports ([#21](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/21)) ([f86fc07](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/f86fc07b0e019dd9fd323acd107835eca3cd92d4))
+* **exports:** stop using path fallbacks ([#22](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/22)) ([d76dda9](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/d76dda9e07bc9f8ffad94f3ecf9287f471928c81))
+* **internal:** minor client file refactoring ([#20](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/20)) ([8fabbf0](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/8fabbf0e7477221a4120e67faeb5bd7728bb6d82))
+* **internal:** remove extra empty newlines ([#16](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/issues/16)) ([77cdbc0](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/commit/77cdbc0a89629b7a6aae5628b0ee7a96a05d2d46))
+
 ## 0.1.0-alpha.4 (2025-03-12)
 
 Full Changelog: [v0.1.0-alpha.3...v0.1.0-alpha.4](https://github.com/LiquidMetal-AI/raindrop-typescript-sdk/compare/v0.1.0-alpha.3...v0.1.0-alpha.4)
