@@ -1,7 +1,7 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIResource } from '../resource';
-import { APIPromise } from '../api-promise';
+import { APIResource } from '../core/resource';
+import { APIPromise } from '../core/api-promise';
 import { RequestOptions } from '../internal/request-options';
 
 export class DocumentQuery extends APIResource {
@@ -19,7 +19,7 @@ export class DocumentQuery extends APIResource {
    *
    * The system will:
    *
-   * - Maintain conversation history for context when using the same request_id
+   * - Maintain conversation history for context when using the same `request_id`
    * - Process questions against file content
    * - Generate contextual, relevant responses
    *

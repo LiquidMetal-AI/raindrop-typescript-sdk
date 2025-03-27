@@ -39,3 +39,18 @@ Types:
 Methods:
 
 - <code title="post /v1/summarize_page">client.summarizePage.<a href="./src/resources/summarize-page.ts">create</a>({ ...params }) -> SummarizePageCreateResponse</code>
+
+# Object
+
+Types:
+
+- <code><a href="./src/resources/object.ts">ObjectListResponse</a></code>
+- <code><a href="./src/resources/object.ts">ObjectDeleteResponse</a></code>
+- <code><a href="./src/resources/object.ts">ObjectUploadResponse</a></code>
+
+Methods:
+
+- <code title="get /v1/object/{bucket}">client.object.<a href="./src/resources/object.ts">list</a>(bucket) -> ObjectListResponse</code>
+- <code title="delete /v1/object/{bucket}/{key}">client.object.<a href="./src/resources/object.ts">delete</a>(key, { ...params }) -> ObjectDeleteResponse</code>
+- <code title="get /v1/object/{bucket}/{key}">client.object.<a href="./src/resources/object.ts">download</a>(key, { ...params }) -> Response</code>
+- <code title="put /v1/object/{bucket}/{key}">client.object.<a href="./src/resources/object.ts">upload</a>(key, { ...params }) -> ObjectUploadResponse</code>

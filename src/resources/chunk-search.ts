@@ -1,13 +1,13 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIResource } from '../resource';
+import { APIResource } from '../core/resource';
 import * as SearchAPI from './search';
-import { APIPromise } from '../api-promise';
+import { APIPromise } from '../core/api-promise';
 import { RequestOptions } from '../internal/request-options';
 
 export class ChunkSearch extends APIResource {
   /**
-   * Chunk Search provides a search capabilities that serve as a complete drop-in
+   * Chunk Search provides search capabilities that serve as a complete drop-in
    * replacement for traditional RAG pipelines. This system enables AI agents to
    * leverage private data stored in Smart Buckets with zero additional
    * configuration.
